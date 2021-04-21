@@ -1,0 +1,44 @@
+.addButton
+{
+    padding:auto;
+    margin-left: 5%; 
+    text-align: right;
+}
+.h1
+{
+    text-align: center;
+    padding-bottom: 5%;
+
+}
+.current
+{
+    padding:3%;
+    font-size: large;
+
+}
+.addTask
+{
+    margin-top:auto;
+    margin-bottom:auto;
+    
+    
+
+}
+.list
+{
+    padding:7%;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin:30px;
+    border:5px solid gray ;
+}
+.taskalign
+{
+    text-align: center;
+    margin:auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    
+    padding: 5px;
+}
