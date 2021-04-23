@@ -1,3 +1,7 @@
+.body
+{
+    background:whitesmoke;
+}
 .addButton
 {
     padding:auto;
@@ -6,9 +10,11 @@
 }
 .h1
 {
-    text-align: center;
-    padding-bottom: 5%;
-
+    color: rgb(45, 45, 85);
+    text-align: center; 
+    padding-bottom: 0px ;
+    margin-bottom: 2%;
+    
 }
 .current
 {
@@ -32,6 +38,7 @@
     text-align: center;
     margin:30px;
     border:5px solid gray ;
+    
 }
 .taskalign
 {
@@ -39,6 +46,16 @@
     margin:auto;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size:large;
-    
+     
+    padding: 5px;
+}
+.completedtaskalign
+{
+    text-align: center;
+    margin:auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:large;
+    scroll-behavior: smooth;
+     
     padding: 5px;
 }
