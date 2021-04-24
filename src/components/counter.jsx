@@ -35,7 +35,7 @@ class Counter extends Component {
     {
         if(this.state.tasks.length === 0) return <p className={styles.taskalign}> No tasks Yet!</p>;
         
-        return <ul className={styles.taskalign}> {this.state.tasks.map( tasks=> <li key={tasks.indexOf(tasks)}>{tasks} {this.renderDeletePending()}</li>)}</ul>;
+        return <ul className={styles.taskalign}> {this.state.tasks.map( tasks=> <li key={tasks} id={tasks.indexOf({tasks})}>{tasks} {this.renderDeletePending()}</li>)}</ul>;
          
 
 
@@ -63,6 +63,7 @@ class Counter extends Component {
      deleteTask=(index)=>
      {
          const list = this.state.tasks;     
+         //let t= document.getElementById(index)
          
          list.splice(index,1);
          this.setState({list});
@@ -85,7 +86,7 @@ class Counter extends Component {
         
         return <React.Fragment> {/*COmment <div>*/}
         
-        <body className={styles.body}>
+        
         <h1 className={styles.h1}> My-Scheduler </h1> 
         <div className="row text-center m-1 "> 
         <p className="col ">  Current Tasks:  <span className={this.currenttaskState()} >{this.formatCount()} </span> </p>
@@ -126,7 +127,7 @@ class Counter extends Component {
         <h3> Completed Tasks</h3>
         {this.renderCompleted()}
         </section>
-        </body>
+       
         
 
         </React.Fragment>;
